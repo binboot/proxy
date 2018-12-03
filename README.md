@@ -57,7 +57,7 @@ sudo mkdir /etc/shadowsocks
 sudo vim /etc/shadowsocks/shadowsocks.json
 
 {
-    "server":"104.237.154.179",
+    "server":"172.104.252.35",
     "server_port":55218,
     "password":"SJKWLDCJS@#()2csTSIT",
     "timeout":300,
