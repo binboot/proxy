@@ -28,17 +28,17 @@ pip install shadowsocks
 9:
 vim firewalld.sh
 
-firewall-cmd --zone=public --add-port=56211/tcp --permanent
-firewall-cmd --zone=public --add-port=56218/tcp --permanent
-firewall-cmd --zone=public --add-port=55211/tcp --permanent
-firewall-cmd --zone=public --add-port=55218/tcp --permanent
-firewall-cmd --zone=public --add-port=80/tcp --permanent
-firewall-cmd --zone=public --add-port=8080/tcp --permanent
-firewall-cmd --zone=public --add-port=443/tcp --permanent
-firewall-cmd --zone=public --add-port=443/udp --permanent
-firewall-cmd --zone=public --add-port=6728/tcp --permanent
-firewall-cmd --zone=public --add-port=6728/udp --permanent
-firewall-cmd --complete-reload
+firewall-cmd --zone=public --add-port=56211/tcp --permanent 
+firewall-cmd --zone=public --add-port=56218/tcp --permanent 
+firewall-cmd --zone=public --add-port=55211/tcp --permanent 
+firewall-cmd --zone=public --add-port=55218/tcp --permanent 
+firewall-cmd --zone=public --add-port=80/tcp --permanent 
+firewall-cmd --zone=public --add-port=8080/tcp --permanent 
+firewall-cmd --zone=public --add-port=443/tcp --permanent 
+firewall-cmd --zone=public --add-port=443/udp --permanent 
+firewall-cmd --zone=public --add-port=6728/tcp --permanent 
+firewall-cmd --zone=public --add-port=6728/udp --permanent 
+firewall-cmd --complete-reload 
 firewall-cmd --zone=public --list-ports
 
 10:
