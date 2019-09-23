@@ -8,24 +8,21 @@ yum update
 reboot
 
 3:
-yum install gcc gcc-c++ telnet curl
+yum install gcc gcc-c++ telnet curl wget
 
 4:
 reboot
 
 5:
-yum install wget
-
-6:
 wget https://bootstrap.pypa.io/get-pip.py
 
-7:
+6:
 python get-pip.py
 
-8:
+7:
 pip install shadowsocks
 
-9:
+8:
 vim firewalld.sh
 
 firewall-cmd --zone=public --add-port=56211/tcp --permanent 
@@ -42,19 +39,19 @@ firewall-cmd --zone=public --add-port=37010/tcp --permanent
 firewall-cmd --complete-reload 
 firewall-cmd --zone=public --list-ports
 
-10:
+9:
 chmod 755 ./firewalld.sh
 
-11:
+10:
 ./firewalld.sh
 
-12:
+11:
 reboot
 
-13:
+12:
 sudo mkdir /etc/shadowsocks
 
-14:
+13:
 sudo vim /etc/shadowsocks/shadowsocks.json
 
 {
@@ -66,14 +63,14 @@ sudo vim /etc/shadowsocks/shadowsocks.json
     "fast_open": true
 }
 
-15:
+14:
 vim ./shackdows.sh
 
 ssserver -c /etc/shadowsocks/shadowsocks.json -d start
 
-16:
+15:
 sudo chmod 755 ./shackdows.sh
 
-17:
+16:
 ./shackdows.sh
 
