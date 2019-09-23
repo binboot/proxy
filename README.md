@@ -8,7 +8,7 @@ yum update
 reboot
 
 3:
-yum install gcc gcc-c++
+yum install gcc gcc-c++ telnet curl
 
 4:
 reboot
