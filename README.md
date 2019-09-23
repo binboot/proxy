@@ -59,7 +59,7 @@ sudo vim /etc/shadowsocks/shadowsocks.json
 
 {
     "server":"0.0.0.0",
-    "server_port":33010,
+    "server_port":37010,
     "password":"",
     "timeout":300,
     "method":"rc4-md5",
