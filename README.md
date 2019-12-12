@@ -74,3 +74,28 @@ sudo chmod 755 ./shackdows.sh
 16:
 ./shackdows.sh
 
+17:
+sudo cd /etc/systemd/system
+
+sudo vim shadowsocks.service
+
+[Unit]
+Description=shadowsocks
+After=network-online.target
+
+[Service]
+Type=simple
+User=root
+ExecStart=/usr/bin/sh /root/shackdows.sh
+KillMode=process
+Restart=on-failure
+RestartSec=1min
+
+[Install]
+WantedBy=multi-user.target
+
+18:
+sudo systemctl start shadowsocks
+sudo systemctl status shadowsocks
+sudo systemctl enable shadowsocks.service
+
