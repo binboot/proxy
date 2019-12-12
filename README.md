@@ -75,7 +75,7 @@ sudo chmod 755 ./shackdows.sh
 ./shackdows.sh
 
 17:
-sudo cd /etc/systemd/system
+cd /etc/systemd/system
 
 sudo vim shadowsocks.service
 
@@ -95,6 +95,7 @@ RestartSec=1min
 WantedBy=multi-user.target
 
 18:
+sudo chmod 755 shadowsocks.service
 sudo systemctl start shadowsocks
 sudo systemctl status shadowsocks
 sudo systemctl enable shadowsocks.service
