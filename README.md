@@ -37,6 +37,9 @@ firewall-cmd --zone=public --add-port=6728/tcp --permanent
 firewall-cmd --zone=public --add-port=6728/udp --permanent 
 firewall-cmd --zone=public --add-port=37010/tcp --permanent
 firewall-cmd --zone=public --add-port=27010/tcp --permanent
+firewall-cmd --zone=public --add-port=37110/tcp --permanent
+firewall-cmd --zone=public --add-port=36211/tcp --permanent
+firewall-cmd --zone=public --add-port=26211/tcp --permanent
 firewall-cmd --complete-reload 
 firewall-cmd --zone=public --list-ports
 
@@ -57,7 +60,7 @@ sudo vim /etc/shadowsocks/shadowsocks.json
 
 {
     "server":"0.0.0.0",
-    "server_port":27010,
+    "server_port":26211,
     "password":"",
     "timeout":300,
     "method":"rc4-md5",
