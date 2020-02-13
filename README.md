@@ -68,15 +68,15 @@ sudo vim /etc/shadowsocks/shadowsocks.json
 }
 
 14:
-vim ./shackdows.sh
+vim /root/shackdows.sh
 
 ssserver -c /etc/shadowsocks/shadowsocks.json -d start
 
 15:
-sudo chmod 755 ./shackdows.sh
+sudo chmod 755 /root/shackdows.sh
 
 16:
-./shackdows.sh
+/root/shackdows.sh
 
 17:
 cd /etc/systemd/system
