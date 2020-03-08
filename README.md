@@ -8,7 +8,7 @@ yum update
 reboot
 
 3:
-yum install gcc gcc-c++ telnet curl wget mtr
+yum install gcc gcc-c++ telnet curl wget mtr traceroute
 
 4:
 reboot
