@@ -20,7 +20,7 @@ wget https://bootstrap.pypa.io/get-pip.py
 python get-pip.py
 
 7:
-pip install shadowsocks
+pip3 install https://github.com/shadowsocks/shadowsocks/archive/master.zip -U
 
 8:
 vim firewalld.sh
